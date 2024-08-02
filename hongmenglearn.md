@@ -1,8 +1,8 @@
-> 基于现有的flutter项目，打包成鸿蒙next包的记录
+> 基于现有的flutter项目，打包成鸿蒙next包
   
 #### 1.配置环境
 - 下载适配过鸿蒙的flutter_flutter版本，[点击下载](https://gitee.com/openharmony-sig/flutter_flutter)
-- 第二步，下载鸿蒙开发套件，内置了开发需要的组件，[点击下载](https://developer.huawei.com/consumer/cn/download/deveco-studio)
+- 第二步，下载鸿蒙开发套件DevEco-Studio，内置了开发需要的配置，[点击下载](https://developer.huawei.com/consumer/cn/download/deveco-studio)
 
 #配置flutter sdk  
 ```
@@ -25,7 +25,8 @@ export PATH=$TOOL_HOME/tools/node/bin:$PATH # command-line-tools/tool/node/bin
 
 - 在当前flutter项目下生成ohs项目  
 - 替换涉及到原生部分的插件[点击查看](https://gitee.com/openharmony-sig/flutter_packages)和[Flutter三方库适配计划](https://docs.qq.com/sheet/DVVJDWWt1V09zUFN2)
-- 打包hap，具体代码乳腺癌
+- 打包成.hap鸿蒙安装包
+
 ```
 //创建ohs
 flutter create --platforms ohos .
@@ -34,7 +35,7 @@ flutter create --platforms ohos .
 flutter build hap --release
 flutter build hap --debug
 
-//替换插件
+//替换原生插件
 dependencies:
   path_provider:
     git:

@@ -1,3 +1,3 @@
 # Flutter学习笔记
 
-* [鸿蒙next打包记录](./hongmenglearn.md)
+* [Flutter项目打包鸿蒙next记录](./hongmenglearn.md)
